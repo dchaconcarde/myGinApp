@@ -1,0 +1,24 @@
+{
+    "users":[
+        {
+            "id" : 12,
+            "nombre" : "Daniel",
+            "apellido" : "Chacon",
+            "email" : "daniel.chacon@gmail.com",
+            "edad" : 24,
+            "altura" : 1.84,
+            "activo" : true,
+            "fechaCreado" : "22/12/2021"
+        },
+        {
+            "id" : 12,
+            "nombre" : "Daniel",
+            "apellido" : "Chacon",
+            "email" : "daniel.chacon@gmail.com",
+            "edad" : 24,
+            "altura" : 1.84,
+            "activo" : true,
+            "fechaCreado" : "22/12/2021"
+        }
+    ]   
+}
