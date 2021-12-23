@@ -1,0 +1,22 @@
+[
+    {
+        "id" : 12,
+        "nombre" : "Daniel",
+        "apellido" : "Chacon",
+        "email" : "daniel.chacon@gmail.com",
+        "edad" : 24,
+        "altura" : 1.84,
+        "activo" : false,
+        "fechaCreado" : "22/12/2021"
+    },
+    {
+        "id" : 282,
+        "nombre" : "Juan",
+        "apellido" : "Perez",
+        "email" : "juanpi@gmail.com",
+        "edad" : 42,
+        "altura" : 1.54,
+        "activo" : true,
+        "fechaCreado" : "21/12/2021"
+    }
+]

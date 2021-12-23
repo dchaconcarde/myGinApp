@@ -1,12 +1,13 @@
 package main
 
 import (
-	"net/http"
-	"github.com/gin-gonic/gin"
-	"os"
 	"encoding/json"
-	"io/ioutil"
 	"fmt"
+	"io/ioutil"
+	"net/http"
+	"os"
+
+	"github.com/gin-gonic/gin"
 )
 
 func main() {
@@ -28,19 +29,19 @@ type Users struct {
 }
 
 type User struct {
-	ID int `json:"id"`
-	Nombre string `json:"nombre"`
-	Apellido string `json:"apellido"`
-	Email string `json:"email"`
-	Edad int `json:"edad"`
-	Altura float64 `json:"altura"`
-	Activo bool `json:"activo"`
-	FechaCreado string `json:"fechaCreado"`
+	ID          int     `json:"id"`
+	Nombre      string  `json:"nombre"`
+	Apellido    string  `json:"apellido"`
+	Email       string  `json:"email"`
+	Edad        int     `json:"edad"`
+	Altura      float64 `json:"altura"`
+	Activo      bool    `json:"activo"`
+	FechaCreado string  `json:"fechaCreado"`
 }
 
-func readJson() Users{
+func readJson() Users {
 
-	jsonFile, err := os.Open("/Users/dchaconcarde/go/src/github.com/dchaconcarde/myGinApp/go-web/users.json")
+	jsonFile, err := os.Open("/Users/dchaconcarde/go/src/github.com/dchaconcarde/myGinApp/go-web-clase1-TM/users.json")
 	if err != nil {
 		panic("El archivo indicado no fue encontrado o está dañado")
 	}
@@ -50,6 +51,6 @@ func readJson() Users{
 
 	var users Users
 	json.Unmarshal(byteValue, &users)
-	
+
 	return users
 }
